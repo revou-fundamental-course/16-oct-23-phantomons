@@ -69,6 +69,32 @@ justify-content: space-around;
 
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.input-box {
+    width: 45%;
+}
+
+.output-box {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
 .footer-text {
 
 color: black;
