@@ -1,5 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
 .header {
 display: flex;
+
+background-color: grey;
 justify-content: space-between;
 align-items: center;
 padding: 0em 0.2em;
@@ -17,6 +22,8 @@ display: flex;
 }
 
 .nav-item{
+text-decoration: none;
+color: black;
 padding: 0 1em;
 border: 0.5px solid black;
 min-width: 60px;
@@ -67,6 +74,32 @@ border-radius: 50%;
 display: flex;
 justify-content: space-around;
 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.input-box {
+    width: 45%;
+}
+
+.output-box {
+    width: 45%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-group input {
+    margin-right: 5px;
 }
 
 .footer-text {
