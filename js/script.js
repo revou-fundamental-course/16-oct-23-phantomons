@@ -1,12 +1,16 @@
-function tampilkanData() {
-    var nama = document.getElementById("nama").value;
-    var tgl_lahir = document.getElementById("tgl_lahir").value;
-    var jenis_kelamin = document.querySelector('input[name="jenis_kelamin"]:checked').value;
-    var pesan = document.getElementById("pesan").value;
+function submitForm() {
+    const nama = document.getElementById("nama").value;
+    const tanggalLahir = document.getElementById("tanggalLahir").value;
+    const jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked').value;
+    const pesan = document.getElementById("pesan").value;
 
-    var hasil = "Nama: " + nama + "<br>";
-    hasil += "Tanggal Lahir: " + tgl_lahir + "<br>";
-    hasil += "Jenis Kelamin: " + jenis_kelamin + "<br>";
-    hasil += "Pesan: " + pesan;
-
-    document.getElementById("hasil").innerHTML = hasil;
+    
+    const outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = `
+        <h2>Data diri anda:</h2>
+        <p>Nama: ${nama}</p>
+        <p>Tanggal Lahir: ${tanggalLahir}</p>
+        <p>Jenis Kelamin: ${jenisKelamin}</p>
+        <p>Pesan: ${pesan}</p>
+    `;
+}
